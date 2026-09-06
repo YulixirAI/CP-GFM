@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cp-gfm.example/schemas/candidate_public.schema.json",
+  "title": "CP-GFM Public Candidate Contract (v0.1)",
+  "description": "A demonstrative, reduced public candidate contract. Carries synthetic candidate identity and synthetic objective values only. Written from scratch for the public release; not a subset of any internal schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["candidate_id", "objectives", "synthetic"],
+  "properties": {
+    "candidate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "objectives": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["interaction_proxy", "topology_validity", "developability_proxy"],
+      "properties": {
+        "interaction_proxy": {
+          "type": "number"
+        },
+        "topology_validity": {
+          "type": "number"
+        },
+        "developability_proxy": {
+          "type": "number"
+        }
+      }
+    },
+    "synthetic": {
+      "type": "boolean",
+      "const": true
+    }
+  }
+}

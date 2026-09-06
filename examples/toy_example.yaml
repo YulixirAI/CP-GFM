@@ -1,0 +1,15 @@
+# Synthetic toy config for the CP-GFM public interface.
+# All values are synthetic and deterministic. Nothing here is derived from
+# production.
+
+target_id: toy-target
+description: "Synthetic toy target for contract demonstration."
+
+topology_contract:
+  topology_class: head_to_tail
+  residue_count: 10
+  closure_type: backbone_cyclization
+  residue_alphabet: canonical_example
+
+generation_budget: 5
+audit_budget: 2

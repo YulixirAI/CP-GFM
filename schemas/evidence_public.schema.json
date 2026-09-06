@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cp-gfm.example/schemas/evidence_public.schema.json",
+  "title": "CP-GFM Public Evidence Contract (v0.1)",
+  "description": "A demonstrative, reduced public evidence contract. Records the structured outcome of a synthetic pipeline run: proposals, gated/ranked/selected counts, and audit evidence. Written from scratch for the public release; not a subset of any internal schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["run_id", "pipeline", "candidates", "audit"],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pipeline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generated", "gated", "ranked", "selected"],
+      "properties": {
+        "generated": { "type": "integer", "minimum": 0 },
+        "gated": { "type": "integer", "minimum": 0 },
+        "ranked": { "type": "integer", "minimum": 0 },
+        "selected": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "candidate_public.schema.json"
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["audited", "confirmed"],
+      "properties": {
+        "audited": { "type": "integer", "minimum": 0 },
+        "confirmed": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

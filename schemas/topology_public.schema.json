@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cp-gfm.example/schemas/topology_public.schema.json",
+  "title": "CP-GFM Public Topology Contract (v0.1)",
+  "description": "A demonstrative, reduced public topology contract. Supports a single simple head-to-tail cyclic topology only. Written from scratch for the public release; not a subset of any internal schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["topology", "closure", "chemistry", "validation"],
+  "properties": {
+    "topology": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["class", "residue_count"],
+      "properties": {
+        "class": {
+          "type": "string",
+          "const": "head_to_tail"
+        },
+        "residue_count": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 100
+        }
+      }
+    },
+    "closure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "backbone_cyclization"
+        }
+      }
+    },
+    "chemistry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["residue_alphabet"],
+      "properties": {
+        "residue_alphabet": {
+          "type": "string",
+          "const": "canonical_example"
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["topology_valid"],
+      "properties": {
+        "topology_valid": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    }
+  }
+}

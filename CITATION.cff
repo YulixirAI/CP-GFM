@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use the CP-GFM public interface in your work, please cite it as follows."
+title: "CP-GFM Public Interface: a topology-aware framework for target-specific cyclic peptide discovery"
+type: software
+version: 0.1.0
+date-released: 2026-09-06
+abstract: >-
+  Public scientific interface of CP-GFM, a topology-aware generative and
+  runtime decision framework for target-specific cyclic peptide discovery.
+  This repository describes the architecture, the public data contracts, and a
+  synthetic toy execution. It does not contain the production implementation.
+keywords:
+  - cyclic peptide
+  - generative model
+  - multi-objective optimization
+  - topology-aware design
+  - scientific interface
+authors:
+  - name: "CP-GFM Contributors"
+    # Individual authorship to be finalized during legal review.
+license: "See LICENSE-or-NOTICE.md — license pending final legal review."
