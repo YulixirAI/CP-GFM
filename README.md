@@ -1,3 +1,17 @@
+## Associated preprint
+
+CP-GFM-SGX: Topology-Aware Cyclic Peptide Generation and Design with
+Receptor-Conditioned Structural Evaluation and Experimental KRAS Affinity Optimization
+
+Versioned DOI: https://doi.org/10.26434/chemrxiv.15010253/v1
+
+This repository is the public scientific interface and synthetic toy demonstration
+for the associated CP-GFM-SGX work. The preprint carries the underlying scientific
+method, results, and experimental KRAS affinity conclusions. This repository is
+not the full scientific implementation or the production evaluation pipeline; it
+serves to expose the public architecture, data contracts, and an illustrative
+runtime for inspection and reproducibility-oriented review.
+
 # CP-GFM Public Interface
 
 > **Scientific architecture + data contracts + reproducibility discipline.**
