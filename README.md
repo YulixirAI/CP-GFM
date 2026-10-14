@@ -1,3 +1,7 @@
+
+## Technical report
+
+[Read the CP-GFM-SGX Technical Report](docs/CP-GFM-SGX_Technical_Report.md)
 ## Associated preprint
 
 CP-GFM-SGX: Topology-Aware Cyclic Peptide Generation and Design with
