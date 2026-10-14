@@ -1,5 +1,6 @@
 cff-version: 1.2.0
-message: "If you use the CP-GFM public interface in your work, please cite it as follows."
+message: "If you use the CP-GFM public interface or reference the associated scientific results, please cite both the public repository and the 
+ChemRxiv preprint: CP-GFM-SGX: Topology-Aware Cyclic Peptide Generation and Design with Receptor-Conditioned Structural Evaluation and Experimental KRAS Affinity Optimization (version 1, DOI: https://doi.org/10.26434/chemrxiv.15010253/v1)."
 title: "CP-GFM Public Interface: a topology-aware framework for target-specific cyclic peptide discovery"
 type: software
 version: 0.1.0
